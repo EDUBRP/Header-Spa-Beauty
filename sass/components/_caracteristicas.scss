@@ -1,0 +1,32 @@
+@use '/sass/abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.caracteristicas {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 40px;
+    .caracteristica {
+        width: 100px;
+        text-align: center;
+        &__icon {
+            width: 40px;
+            border-radius: 50%;
+            background-color: var.$green;
+            padding: 5px;
+            margin-bottom: 24px;
+        }
+        h3 {
+            color: var.$blue;
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        p {
+            color: var.$gray;
+            font-size: 14px;
+
+        }
+    }
+}

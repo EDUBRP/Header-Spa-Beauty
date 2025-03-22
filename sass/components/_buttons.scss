@@ -1,0 +1,6 @@
+@use '/sass/abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.button {
+  @include mix.button;
+}

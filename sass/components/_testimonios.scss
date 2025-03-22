@@ -1,0 +1,31 @@
+@use '/sass/abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.testimonios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    .testimonio {
+        width: 350px;
+        background: rgba(240, 244, 248, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        backdrop-filter: blur(3px);
+        h4 {
+            color: var.$blue;
+            margin-top: 8px;
+        }
+    }
+    .testimonio:first-child {
+        top: -475px;
+        left: 76%;
+    }
+    .testimonio:nth-child(2) {
+        top: -227px;
+        left: 66%;
+    }
+}

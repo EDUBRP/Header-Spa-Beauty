@@ -1,0 +1,17 @@
+@use '/sass/abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.login {
+    margin-left: auto;
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 27px;
+    }
+}
+
+.login li:nth-child(3) a {
+    text-decoration: underline;
+    color: var.$blue;
+}
